@@ -45,8 +45,12 @@
 }
 
 @media (width < 550px) {
-	.SideBar{
+	.SideBar {
 		padding: 8px;
+		position: fixed;
+		top: 0;
+		left: 0;
+		bottom: 0;
 	}
 
 	.navItem {
@@ -54,7 +58,7 @@
 		height: 50px;
 	}
 
-	.navItem span{
+	.navItem span {
 		display: none;
 	}
 }

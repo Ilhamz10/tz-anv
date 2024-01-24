@@ -7,6 +7,7 @@ const Main = () => {
 	return (
 		<div className={styles.Main}>
 			<SideBar />
+			<div className={styles.mobileGap}></div>
 			<Outlet />
 		</div>
 	);

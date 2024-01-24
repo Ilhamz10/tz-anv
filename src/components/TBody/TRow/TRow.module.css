@@ -47,3 +47,10 @@ td[data-cell='status'] .trCont {
 		text-transform: capitalize;
 	}
 }
+
+
+@media (width < 390px) {
+	td {
+		grid-template-columns: 7ch auto;
+	}
+}

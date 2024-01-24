@@ -1,19 +1,20 @@
 .upButton {
 	display: none;
-	position: sticky;
-	bottom: 0;
+	position: fixed;
+	left: 66px;
+	bottom: 0px;
 	background: hsl(228, 100%, 99%);
 	font-size: 16px;
 	align-items: center;
 	justify-content: center;
-	width: 100%;
+	width: 80%;
 	border: 1px solid hsl(228, 100%, 90%);
 	padding: 0.5rem;
 	gap: 10px;
 	color: #4b49ac;
 }
 
-.addNewUserForm .closeBtn{
+.addNewUserForm .closeBtn {
 	display: none;
 	background: none;
 	justify-self: flex-end;
@@ -44,7 +45,7 @@
 }
 
 @media (width < 650px) {
-	.addNewUserForm .closeBtn{
+	.addNewUserForm .closeBtn {
 		display: flex;
 	}
 	.addNewUserForm {
