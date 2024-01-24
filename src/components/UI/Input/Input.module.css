@@ -1,0 +1,19 @@
+.inputContainer {
+	display: grid;
+	gap: 5px;
+}
+
+.inputContainer input {
+	padding: 0.5rem;
+	border-radius: 5px;
+	border-color: hsl(228, 100%, 90%);
+	outline: none;
+	border-style: solid;
+	width: 100%;
+}
+
+@media (width < 650px) {
+	.inputContainer input {
+		font-size: 12px;
+	}
+}

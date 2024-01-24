@@ -1,0 +1,13 @@
+.Main {
+	display: grid;
+	grid-template-columns: 2fr 8fr;
+	align-items: start;
+	min-height: 100vh;
+    background: hsl(228, 100%, 99%);
+}
+
+@media (width < 550px) {
+	.Main{
+		grid-template-columns: 66px 1fr;
+	}
+}

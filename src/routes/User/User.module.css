@@ -1,0 +1,45 @@
+.User {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    flex-direction: column;
+    background: hsl(228, 100%, 99%);
+}
+
+.link{
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.userCont{
+    max-width: 400px;
+    width: 100%;
+}
+
+.card{
+    width: 100%;
+    background: white;
+    padding: 2rem;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0 0 20px -15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    text-align: center;
+}
+
+.cardMainInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardInfo{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}

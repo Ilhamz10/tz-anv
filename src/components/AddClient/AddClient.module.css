@@ -1,0 +1,65 @@
+.upButton {
+	display: none;
+	position: sticky;
+	bottom: 0;
+	background: hsl(228, 100%, 99%);
+	font-size: 16px;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	border: 1px solid hsl(228, 100%, 90%);
+	padding: 0.5rem;
+	gap: 10px;
+	color: #4b49ac;
+}
+
+.addNewUserForm .closeBtn{
+	display: none;
+	background: none;
+	justify-self: flex-end;
+	padding: 0;
+	justify-content: center;
+	align-items: center;
+}
+
+.addNewUserForm {
+	position: sticky;
+	bottom: 0;
+	width: 100%;
+	background: hsl(228, 100%, 99%);
+	padding: 0.5rem 1rem 1.7rem;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 10px;
+	align-items: flex-end;
+}
+
+.addNewUserForm button {
+	padding: 0.5rem 1rem;
+	border: none;
+	background: #4b49ac;
+	color: white;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+@media (width < 650px) {
+	.addNewUserForm .closeBtn{
+		display: flex;
+	}
+	.addNewUserForm {
+		position: fixed;
+		width: 80%;
+		left: 66px;
+		grid-template-columns: 1fr;
+		transform: translateY(100%);
+		transition: 0.5s;
+		box-shadow: 0 0 10px -5px;
+	}
+	.addNewUserForm.formUp {
+		transform: translateY(0);
+	}
+	.upButton {
+		display: flex;
+	}
+}

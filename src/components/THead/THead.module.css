@@ -1,0 +1,13 @@
+.THead th{
+    background: #615fbe;
+    padding: 1rem;
+    text-align-last: left;
+    color: white;
+}
+
+
+@media (width < 650px) {
+    .THead th{
+        display: none;
+    }
+}

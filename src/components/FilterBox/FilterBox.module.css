@@ -1,0 +1,14 @@
+.FilterBox {
+	display: grid;
+	grid-template-columns: minmax(0, 200px) minmax(0, 200px);
+	margin-bottom: 20px;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+@media (width < 650px) {
+	.FilterBox {
+		grid-template-columns: 1fr;
+        gap: 10px;
+	}
+}

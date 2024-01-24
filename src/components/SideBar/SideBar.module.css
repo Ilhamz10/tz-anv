@@ -1,0 +1,60 @@
+.SideBar {
+	background-color: white;
+	padding: 15px;
+	box-shadow: 0 10px 20px -15px;
+	position: sticky;
+	top: 0;
+	left: 0;
+	min-height: 100vh;
+}
+
+.navList {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.navItem {
+	height: 70px;
+	display: flex;
+	justify-content: flex-start;
+	padding: 15px;
+	gap: 10px;
+	align-items: center;
+	border-radius: 10px;
+	font-size: 18px;
+	font-weight: 500;
+	color: #4b49ac;
+}
+
+.navItem:hover {
+	background: rgb(249, 249, 249);
+}
+
+.navItem.active {
+	background: #4b49ac;
+	color: white;
+}
+
+.navItem svg path {
+	fill: #4b49ac;
+}
+
+.navItem.active svg path {
+	fill: white;
+}
+
+@media (width < 550px) {
+	.SideBar{
+		padding: 8px;
+	}
+
+	.navItem {
+		width: 50px;
+		height: 50px;
+	}
+
+	.navItem span{
+		display: none;
+	}
+}

@@ -1,0 +1,42 @@
+.Dropdown {
+	position: relative;
+}
+
+.Dropdown .activeItemBtn {
+	width: 100%;
+	padding: 0.5rem 1rem;
+	border: 1px solid hsl(228, 100%, 90%);
+	display: flex;
+    font-size: 16px;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.Dropdown .activeItemBtn svg {
+	transition: 0.3s;
+}
+
+.Dropdown .activeItemBtn.active svg {
+	transform: rotate(180deg);
+}
+
+.Dropdown ul {
+	position: absolute;
+	background: hsl(228, 100%, 92%);
+	width: 100%;
+	padding: 0.5rem 1rem;
+	display: grid;
+	gap: 5px;
+}
+
+.Dropdown ul li button {
+	font-size: 16px;
+    width: 100%;
+    text-align: left;
+}
+
+@media (width < 650px) {
+    .Dropdown button{
+        font-size: 13px !important;
+    }
+}
