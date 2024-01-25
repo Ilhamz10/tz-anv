@@ -11,9 +11,7 @@ const TBody = ({ data }) => {
 	const currentRow = useRef(null);
 
 	function dragStartHandler(e, user) {
-		e.target.style.opacity = '0';
-		e.target.style.position = 'absolute';
-		e.target.style.zIndex = '0';
+		e.target.style.opacity = '0.2';
 		currentRow.current = e.target;
 		setCurrentUser(user);
 	}
@@ -24,14 +22,15 @@ const TBody = ({ data }) => {
 
 	function dragOverHandler(e) {
 		e.preventDefault();
-		e.target.parentElement.style.borderBottom = `60px solid #d6deff`;
+		if (currentRow.current !== e.target.parentElement) {
+			e.target.parentElement.style.borderBottom = `60px solid #d6deff`;
+		}
 	}
 
 	function dropHandler(e, user) {
 		e.preventDefault();
 		e.target.parentElement.style.borderBottom = '3px solid transparent';
 		currentRow.current.style.opacity = '1';
-		currentRow.current.style.position = 'static';
 		dispatch(
 			usersActions.dragAndDrop({
 				currentId: currentUser.id,
