@@ -31,13 +31,15 @@ const TBody = ({ data }) => {
 		e.preventDefault();
 		e.target.parentElement.style.borderBottom = '3px solid transparent';
 		currentRow.current.style.opacity = '1';
-		dispatch(
-			usersActions.dragAndDrop({
-				currentId: currentUser.id,
-				dropId: user.id,
-				currentUser,
-			})
-		);
+		if (user.id !== currentUser.id) {
+			dispatch(
+				usersActions.dragAndDrop({
+					currentId: currentUser.id,
+					dropId: user.id,
+					currentUser,
+				})
+			);
+		}
 	}
 	return (
 		<tbody className={styles.TBody}>
