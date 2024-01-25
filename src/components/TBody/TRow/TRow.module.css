@@ -4,6 +4,8 @@ td {
 
 tr {
 	background: hsl(228, 100%, 97%);
+	border-bottom: 3px solid transparent;
+	transition: .2s;
 }
 
 tr:nth-of-type(2n) {
